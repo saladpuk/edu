@@ -24,3 +24,7 @@ export function Blue({ children }) {
 export function Gray({ children }) {
   return (<Highlight color="#393939">{children}</Highlight>);
 }
+
+export function Yellow({ children }) {
+  return (<Highlight color="#e4be00">{children}</Highlight>);
+}
