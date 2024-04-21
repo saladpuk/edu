@@ -38,13 +38,13 @@ title: Roadmap
         ```
         ```mermaid
         flowchart
-            code[fa:fa-robot\nการเขียนโค้ด]
-            database[fa:fa-database\nฐานข้อมูล]
-            testing[fa:fa-bug-slash\nการทดสอบระบบ]
-            utility[fa:fa-gauge-high\nตัวช่วย]
-            design[fa:fa-puzzle-piece\nการออกแบบ]
-            system[fa:fa-user-secret\nการดูแลระบบ]
-            cloud[fa:fa-cloud-bolt\nคลาวด์]
+            code[🤖\nการเขียนโค้ด]
+            database[📚\nฐานข้อมูล]
+            testing[🐞\nการทดสอบระบบ]
+            utility[🔧\nตัวช่วย]
+            design[🧩\nการออกแบบ]
+            system[📊\nการดูแลระบบ]
+            cloud[🚀\nคลาวด์]
         ```
     </div>
   </div>
@@ -52,16 +52,16 @@ title: Roadmap
 
 ```mermaid
 flowchart
-    procedural[fa:fa-robot\nProcedural\nProgramming]-->database
-    procedural-.->VersionControls[fa:fa-gauge-high\nVersion\nControls]
-    procedural-->algorithm[fa:fa-robot\nData Structure\nand Algorithm]
-    procedural-->oop["fa:fa-robot\nObject-Oriented\nProgramming (OOP)"]
+    procedural[🤖\nProcedural\nProgramming]-->database
+    procedural-.->VersionControls[🔧\nVersion\nControls]
+    procedural-->algorithm[🤖\nData Structure\nand Algorithm]
+    procedural-->oop["🤖\nObject-Oriented\nProgramming (OOP)"]
     algorithm-.->oop
-    oop-->testing[[fa:fa-bug-slash\nTesting]]
-    oop-->uml[fa:fa-gauge-high\nUML]
+    oop-->testing[[🐞\nTesting]]
+    oop-->uml[🔧\nUML]
     oop-->design
     uml-.->design
-    oop-->api[fa:fa-robot\nWeb API]
+    oop-->api[🤖\nWeb API]
     api-->scaling
     scaling-->architecture
     api-.->design
@@ -72,38 +72,38 @@ flowchart
 
     subgraph design[Designs & Principles]
         direction TB
-        solid[fa:fa-puzzle-piece\nSOLID Designs]-.->design-patterns[fa:fa-puzzle-piece\nDesign Patterns]-->anti-patterns[fa:fa-puzzle-piece\nAnti-Patterns]
+        solid[🧩\nSOLID Designs]-.->design-patterns[🧩\nDesign Patterns]-->anti-patterns[🧩\nAnti-Patterns]
 
-        %% ddd[fa:fa-puzzle-piece\nDomain Driven Design]
-        %% tdd[fa:fa-puzzle-piece\nTest Driven Development]
-        %% clean[fa:fa-puzzle-piece\nClean Architecture]
-        %% cqrs[fa:fa-puzzle-piece\nCQRS]
+        %% ddd[🧩\nDomain Driven Design]
+        %% tdd[🧩\nTest Driven Development]
+        %% clean[🧩\nClean Architecture]
+        %% cqrs[🧩\nCQRS]
     end
 
 
     subgraph database[Databases]
         direction TB
-        relational-db[fa:fa-database\nRelational]
-        relational-db-->NoSQL[[fa:fa-database\nNoSQL]]
+        relational-db[📚\nRelational]
+        relational-db-->NoSQL[[📚\nNoSQL]]
     end
 
     subgraph scaling
-        cloud[[fa:fa-cloud-bolt\nCloud\nComputing]]
-        caching[[fa:fa-robot\nCaching]]
-        monitoring[[fa:fa-user-secret\nSystem\nMonitoring]]
+        cloud[[🚀\nCloud\nComputing]]
+        caching[[🤖\nCaching]]
+        monitoring[[📊\nSystem\nMonitoring]]
     end
 
     subgraph architecture[Architectures]
         direction TB
-        monolith[fa:fa-puzzle-piece\nMonolith]-->microservices[fa:fa-puzzle-piece\nMicroservices]
-        messaging[[fa:fa-puzzle-piece\nMessaging\n& Events]]
+        monolith[🧩\nMonolith]-->microservices[🧩\nMicroservices]
+        messaging[[🧩\nMessaging\n& Events]]
 
         %% Serverless
     end
 ```
 
 ## 😅ดูจบแล้วไงต่อ?
-เนื้อหาทั้งหมดทุกตัวใน Roadmap จะถูกเรียงหมวดตามสัญลักษณ์ต่างๆ (<Icon icon="fa-solid fa-robot" /> <Icon icon="fa-solid fa-database" /> <Icon icon="fa-solid fa-bug-slash" /> <Icon icon="fa-solid fa-gauge-high" /> <Icon icon="fa-solid fa-puzzle-piece" /> <Icon icon="fa-solid fa-user-secret" /> <Icon icon="fa-solid fa-cloud-bolt" />) ซึ่งสามารถอ่านได้จากเว็บสลัดผักทั้งหมดเบย โดยกดที่เมนู [`🧑‍💻ฟามรู้`](/docs/category/contributions) ด้านบน หรือ จะแอบไปกดติดตามเพจสลัดผักไว้ก่อนก็ได้น้าา [`Facebook Mr.Saladpuk`](https://www.facebook.com/mr.saladpuk) ซึ่งในรอบนี้กระเป๋ม **ดช.แมวน้ำ** มีความตั้งใจที่จะค่อยๆทะยอยส่งมอบฟามรู้ให้กับเพื่อนๆอุ๊งๆของเรา และกำลังหาคนใจดีช่วยกันแชร์ความรู้ที่มีอยู่ในพุง โดยสามารถกดไปดูวิธีช่วยได้จากลิงค์นี่เบยกั๊ฟ [`🥳แบ่งปันฟามรู้`](/docs/contribute/creator)
+เนื้อหาทั้งหมดทุกตัวใน Roadmap จะถูกเรียงหมวดตามสัญลักษณ์ต่างๆ (🤖📚🐞🔧🧩📊🚀) ซึ่งสามารถอ่านได้จากเว็บสลัดผักทั้งหมดเบย โดยกดที่เมนู [`🧑‍💻ฟามรู้`](/docs/category/contributions) ด้านบน หรือ จะแอบไปกดติดตามเพจสลัดผักไว้ก่อนก็ได้น้าา [`Facebook Mr.Saladpuk`](https://www.facebook.com/mr.saladpuk) ซึ่งในรอบนี้กระเป๋ม **ดช.แมวน้ำ** มีความตั้งใจที่จะค่อยๆทะยอยส่งมอบฟามรู้ให้กับเพื่อนๆอุ๊งๆของเรา และกำลังหาคนใจดีช่วยกันแชร์ความรู้ที่มีอยู่ในพุง โดยสามารถกดไปดูวิธีช่วยได้จากลิงค์นี่เบยกั๊ฟ [`🥳แบ่งปันฟามรู้`](/docs/contribute/creator)
 
 :::note
 เดี๋ยวถ้ามีเวลาจะกลับมาทำให้หน้านี้สามารถกดดูรายละเอียด และ พาเพื่อนๆไปยังบทความได้เลย รวมถึงระบบสมาชิกให้เพื่อนๆสามารถดูได้ว่ามีเนื้อหาไหนที่ยังไม่ได้ดู หรือ มีความรู้ตรงไหนอัพเดทใหม่ ให้จบเบ็ดเสร็จในหน้าเดียว แต่ตอนนี้ก็ยังไม่มีเวลาทำ ต้องขอโทษด้วยน้ากั๊ฟ 🙏
