@@ -4,7 +4,8 @@ export function Highlight({ children, color }) {
       backgroundColor: color,
       borderRadius: '5px',
       color: '#fff',
-      padding: '0.1rem',
+      paddingLeft: '0.3rem',
+      paddingRight: '0.3rem',
     }}>{children}</span>
   );
 }
@@ -22,7 +23,7 @@ export function Blue({ children }) {
 }
 
 export function Gray({ children }) {
-  return (<Highlight color="#393939">{children}</Highlight>);
+  return (<Highlight color="#636363">{children}</Highlight>);
 }
 
 export function Yellow({ children }) {
