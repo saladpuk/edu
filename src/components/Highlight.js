@@ -27,5 +27,5 @@ export function Gray({ children }) {
 }
 
 export function Yellow({ children }) {
-  return (<Highlight color="#e4be00">{children}</Highlight>);
+  return (<Highlight color="#ffb02e">{children}</Highlight>);
 }

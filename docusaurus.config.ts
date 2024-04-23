@@ -117,11 +117,10 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      logo: {
-        src: 'img/saladpuk.png',
-        href: 'https://www.facebook.com/mr.saladpuk',
-      },
-      copyright: `ใครที่ไม่อยากพลาดอัพเดทก็เข้าไปกดติดตามที่ Facebook Mr.Saladpuk จากรูปแมวน้ำด้านบนนี้ได้เยยนะกั๊ฟ 😘`,
+      // logo: {
+      //   src: 'img/saladpuk.png'
+      // },
+      copyright: `ใครที่ไม่อยากพลาดอัพเดทก็จิ้มลิงค์นี้ <a href='https://www.facebook.com/mr.saladpuk' target='_blank'>Facebook Mr.Saladpuk</a> เข้าไปกดติดตามได้เยยนะกั๊ฟ 😘`,
     },
     prism: {
       theme: prismThemes.github,
