@@ -128,3 +128,66 @@ a:hover {
 .tabs__item {
   padding: 8px;
 }
+
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  /* width: 300px; */
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Add this CSS to your project's global CSS or a component-specific CSS file */
+
+.remark {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.remark.correct {
+  color: green;
+}
+
+.remark.incorrect {
+  color: red;
+}
+
+/* Add this CSS to your project's global CSS or a component-specific CSS file */
+
+.choice:hover {
+  background-color: #f0f0f0; /* Change to your desired hover color */
+  cursor: pointer;
+}

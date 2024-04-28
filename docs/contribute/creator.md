@@ -1,6 +1,17 @@
 ---
 sidebar_position: 1.00
 tags: [contribution, tutorial, creator]
+choices:
+    - Option 1
+    - Option 2
+    - Option 3
+    - Option 4
+remarks:
+    - Incorrect
+    - Incorrect
+    - Correct
+    - Incorrect
+correctAnswers: [2]
 ---
 
 # 🥳แบ่งปันฟามรู้
@@ -246,6 +257,10 @@ import TabItem from '@theme/TabItem';
 เป็น Component ที่สร้างขึ้นมาใช้งานเอง เช่น การทำไฮไลท์
 
 <Highlight color="#c225c2">กำหนดสีเองได้</Highlight> หรือจะเป็นสีที่กำหนดตายตัวไว้แล้ว <Red>แดง</Red> <Green>เขียว</Green> <Blue>น้ำเงิน</Blue> <Gray>เทา</Gray>
+
+### Quiz
+ใช้ในการสร้างคำถามแบบง่ายๆ
+<Quiz title="My Quiz Title" choices={frontMatter.choices} remarks={frontMatter.remarks} correctAnswer={frontMatter.correctAnswers} />
 
 ### Code Blocks
 การแสดงผลโค้ดแบบต่างๆ
