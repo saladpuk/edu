@@ -1,15 +1,18 @@
 ---
 sidebar_position: 99.00
+title: ชื่อหัวข้อ
+image: https://www.bing.com
+description: คำอธิบายเนื้อหาของบทความนี้แบบสั้นๆ
 tags: [tag1, tag2]
 ---
 
-# 🦆ชื่อหัวข้อ
+# {frontMatter.title}
 
-คำอธิบายเนื้อหาของบทความนี้แบบสั้นๆ
+<p>{frontMatter.description}</p>
 
 ![banner](/img/saladpuk-social-card.jpg)
 
-> ภาพจาก [Microsoft Copilot](https://www.bing.com/)
+<blockquote>ภาพจาก <a href={frontMatter.image} target="_blank">Microsoft Copilot</a></blockquote>
 
 ---
 
