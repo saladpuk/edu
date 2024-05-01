@@ -69,14 +69,6 @@ const config: Config = {
     },
   ],
   themes: ['@docusaurus/theme-mermaid'],
-  plugins: [
-    [
-      "docusaurus2-dotenv",
-      {
-        systemvars: true,
-      },
-    ],
-  ],
   markdown: {
     mermaid: true,
   },
