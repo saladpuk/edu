@@ -142,7 +142,7 @@ const config: Config = {
       // logo: {
       //   src: 'img/saladpuk.png'
       // },
-      copyright: `ใครที่ไม่อยากพลาดอัพเดทก็จิ้มลิงค์นี้ <a href='https://www.facebook.com/mr.saladpuk' target='_blank'>Facebook Mr.Saladpuk</a> เข้าไปกดติดตามได้เยยนะกั๊ฟ 😘`,
+      copyright: `<a href='https://www.facebook.com/mr.saladpuk' target='_blank'>จิ้มตรงนี้เพื่อติดตาม</a> หรือ <a href='/docs/contribute/sponsor'>สนับสนุนทุนการศึกษาลูกๆแมวน้ำจิ้มตรงนี้</a>`,
     },
     prism: {
       theme: prismThemes.github,

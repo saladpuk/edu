@@ -4,7 +4,7 @@ import { useColorMode } from '@docusaurus/theme-common';
 
 export function Comment() {
   if (process.env.NODE_ENV !== "production") {
-    return;
+    return <div className="card card-comment"> โซนคุยกัน (￣y▽￣)╭ (*≧︶≦))(￣▽￣* )ゞ</div>
   }
 
   const { colorMode } = useColorMode();
