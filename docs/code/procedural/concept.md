@@ -266,3 +266,5 @@ var class;  // ❌ ทำไม่ได้ เพราะเป็นคำส
 
 ## 🎮ท้าทายฟามรู้ {#challenge}
 <Quiz title={frontMatter.quiz} choices={frontMatter.choices} remarks={frontMatter.remarks} correctAnswer={frontMatter.correctAnswers} />
+
+<Comment />

@@ -3,6 +3,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import { Comment } from '@site/src/components/Comment';
 
 import styles from './index.module.css';
 
@@ -35,6 +36,9 @@ export default function Home(): JSX.Element {
       title={`ความในใจ`}
       description="การเขียนโค้ดเป็นเรื่องสนุก เพราะมันเหมือนได้เล่นเกมแก้ปัญหาตลอดเวลา🥰">
       <HomepageHeader />
+      <div className="container">
+        <Comment />
+      </div>
     </Layout>
   );
 }

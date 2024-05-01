@@ -43,7 +43,7 @@ correctAnswers3: [1]
 
 # {frontMatter.title}
 
-{frontMatter.description}
+<p>{frontMatter.description}</p>
 
 ![banner](assets/data-types.jpg)
 
@@ -307,3 +307,5 @@ flowchart LR
 <Quiz title={frontMatter.quiz1} choices={frontMatter.choices1} remarks={frontMatter.remarks1} correctAnswer={frontMatter.correctAnswers1} />
 <Quiz title={frontMatter.quiz2} choices={frontMatter.choices2} remarks={frontMatter.remarks2} correctAnswer={frontMatter.correctAnswers2} />
 <Quiz title={frontMatter.quiz3} choices={frontMatter.choices3} remarks={frontMatter.remarks3} correctAnswer={frontMatter.correctAnswers3} />
+
+<Comment />

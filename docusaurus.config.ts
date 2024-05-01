@@ -39,6 +39,8 @@ const config: Config = {
           editUrl: 'https://github.com/saladpuk/edu',
           remarkPlugins: [remarkMath],
           rehypePlugins: [rehypeKatex],
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
@@ -46,6 +48,13 @@ const config: Config = {
         },
         theme: {
           customCss: './src/css/custom.css',
+        },
+        googleTagManager: {
+          containerId: 'CONTAINER_ID'
+        },
+        gtag: {
+          trackingID: 'TRACKING_ID',
+          anonymizeIP: true,
         },
       } satisfies Preset.Options,
     ],
@@ -60,6 +69,14 @@ const config: Config = {
     },
   ],
   themes: ['@docusaurus/theme-mermaid'],
+  plugins: [
+    [
+      "docusaurus2-dotenv",
+      {
+        systemvars: true,
+      },
+    ],
+  ],
   markdown: {
     mermaid: true,
   },
@@ -84,11 +101,11 @@ const config: Config = {
           label: '🧑‍💻ฟามรู้',
           position: 'left',
         },
-        {
-          to: '/blog',
-          label: '😗บ่นไปวันๆ',
-          position: 'left',
-        },
+        // {
+        //   to: '/blog',
+        //   label: '😗บ่นไปวันๆ',
+        //   position: 'left',
+        // },
         // {
         //   type: 'dropdown',
         //   label: 'Version',

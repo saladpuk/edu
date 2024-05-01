@@ -68,3 +68,5 @@ export const Highlight = ({children, color}) => (
 >
 > <Highlight color="#25c2a0">Green</Highlight>
 > and <Highlight color="#1877F2">Blue</Highlight>
+
+<Comment />
