@@ -3,9 +3,10 @@ import Giscus from "@giscus/react";
 import { useColorMode } from '@docusaurus/theme-common';
 
 export function Comment() {
-  if (process.env.giscusRepoId === undefined) {
+  if (process.env.NODE_ENV !== "production") {
     return;
   }
+
   const { colorMode } = useColorMode();
   return (
     <Giscus
