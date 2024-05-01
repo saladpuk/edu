@@ -6,6 +6,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'; // Import the libra
 import { fab } from '@fortawesome/free-brands-svg-icons'; // Import all brands icons.
 import { fas } from '@fortawesome/free-solid-svg-icons'; // Import all solid icons.
 
+// Custom components
+import Quiz from '@site/src/components/Quiz';
+import { Comment } from '@site/src/components/Comment';
 import { Highlight, Red, Green, Blue, Gray, Yellow } from '@site/src/components/Highlight';
 
 library.add(fab, fas); // Add all icons to the library so you can use them without importing them individually.
@@ -20,4 +23,6 @@ export default {
   Blue,
   Gray,
   Yellow,
+  Quiz,
+  Comment,
 };

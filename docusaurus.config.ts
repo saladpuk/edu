@@ -1,6 +1,8 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 const config: Config = {
   title: 'Saladpuk.com',
@@ -35,6 +37,10 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           editUrl: 'https://github.com/saladpuk/edu',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
@@ -43,10 +49,34 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        googleTagManager: {
+          containerId: 'CONTAINER_ID'
+        },
+        gtag: {
+          trackingID: 'TRACKING_ID',
+          anonymizeIP: true,
+        },
       } satisfies Preset.Options,
     ],
   ],
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+      integrity:
+        'sha384-odtC+0UGzzFL/6PNoE8rX/SPcQDXBJ+uRepguP4QkPCm2LBxH3FA3y+fKSiJ+AmM',
+      crossorigin: 'anonymous',
+    },
+  ],
   themes: ['@docusaurus/theme-mermaid'],
+  plugins: [
+    [
+      "docusaurus2-dotenv",
+      {
+        systemvars: true,
+      },
+    ],
+  ],
   markdown: {
     mermaid: true,
   },
@@ -71,11 +101,11 @@ const config: Config = {
           label: '🧑‍💻ฟามรู้',
           position: 'left',
         },
-        {
-          to: '/blog',
-          label: '😗บ่นไปวันๆ',
-          position: 'left',
-        },
+        // {
+        //   to: '/blog',
+        //   label: '😗บ่นไปวันๆ',
+        //   position: 'left',
+        // },
         // {
         //   type: 'dropdown',
         //   label: 'Version',
@@ -117,11 +147,10 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      logo: {
-        src: 'img/saladpuk.png',
-        href: 'https://www.facebook.com/mr.saladpuk',
-      },
-      copyright: `ใครที่ไม่อยากพลาดอัพเดทก็เข้าไปกดติดตามที่ Facebook Mr.Saladpuk จากรูปแมวน้ำด้านบนนี้ได้เยยนะกั๊ฟ 😘`,
+      // logo: {
+      //   src: 'img/saladpuk.png'
+      // },
+      copyright: `ใครที่ไม่อยากพลาดอัพเดทก็จิ้มลิงค์นี้ <a href='https://www.facebook.com/mr.saladpuk' target='_blank'>Facebook Mr.Saladpuk</a> เข้าไปกดติดตามได้เยยนะกั๊ฟ 😘`,
     },
     prism: {
       theme: prismThemes.github,
